@@ -11,8 +11,8 @@ Prepare to be blown away by my majestic data app:
 
 
 with st.echo(code_location='below'):
-    total_points = st.slider("Number of points in spiral", 1, 500, 500)
-    num_turns = st.slider("Number of turns in spiral", 1, 10, 2)
+    total_points = st.slider("Number of points in dingus", 1, 500, 500)
+    num_turns = st.slider("Number of turns in dingus", 1, 10, 2)
 
     Point = namedtuple('Point', 'x y')
     data = []
@@ -23,7 +23,7 @@ with st.echo(code_location='below'):
         curr_turn, i = divmod(curr_point_num, points_per_turn)
         angle = (curr_turn + 1) * 2 * math.pi * i / points_per_turn
         radius = curr_point_num / total_points
-        x = radius * math.sin(angle)
+        x = radius * math.tan(angle)
         y = radius * math.tan(angle)
         data.append(Point(x, y))
 
