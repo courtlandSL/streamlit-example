@@ -5,7 +5,7 @@ import pandas as pd
 import streamlit as st
 
 """
-# Courtland's total n00b app
+# Courtland's n00b app
 Prepare to be blown away by my majestic data app:
 """
 
