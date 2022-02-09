@@ -27,6 +27,6 @@ with st.echo(code_location='below'):
         y = radius * math.sin(angle)
         data.append(Point(x, y))
 
-    st.altair_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
-        .mark_circle(color='#0068c9', opacity=0.5)
+    st.altair_chart(alt.Chart(pd.DataFrame(data), height=700, width=700)
+        .mark_circle(color='#ff0000', opacity=0.5)
         .encode(x='x:Q', y='y:Q'))
