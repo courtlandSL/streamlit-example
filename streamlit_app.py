@@ -11,8 +11,8 @@ Prepare to be blown away by my majestic data app:
 
 
 with st.echo(code_location='below'):
-    total_points = st.slider("Number of points in spiral", 1, 500, 250)
-    num_turns = st.slider("Number of turns in spiral", 1, 10, 5)
+    total_points = st.slider("Number of points in spiral", 1, 500, 500)
+    num_turns = st.slider("Number of turns in spiral", 1, 10, 2)
 
     Point = namedtuple('Point', 'x y')
     data = []
